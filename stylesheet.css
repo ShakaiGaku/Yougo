@@ -1,10 +1,13 @@
 @media screen and (min-width:767px) { 
-  a:link {color:#fff;transition:2s;}
-  a:visited{color:#fff;}
-  a:hover {color:#30e4f1;}
+  header a:link {color:#fff;transition:2s;}
+  header a:visited{color:#fff;}
+  header a:hover {color:#30e4f1;}
   body{
     font-family:"Avenir Next";
     background-image:url("typewriter.jpg");
+  }
+  .contents-item li{
+    color:#fff;
   }
   li{
     list-style: none;
@@ -12,82 +15,102 @@
   header{
     background-color:rgba(233,198,145,0.623);
     height:90px;
-    margin:4px;
   }
   .header-logo{
     float:left;
-    font-size:40px;
     padding:10px 60px 0px 20px;
   }
   .header-list li{
     float:left;
     font-size:33px;
-    padding:20px 20px;
+    padding:20px 20px 0px 20px;
   }
   .twitter-timeline{
     float:right;
   }
-  .copy-container h1{
-    color: rgb(252, 252, 250);
-    padding-left: 10px;
-    font-size:80px;
-    }
+  h1{
+    color:rgb(217, 237, 255);
+    font-size: 80px;
+    border-bottom: 2px solid white;
+  }
   .contents{
-    height:500px;
-    margin-top:100px;
-    margin-left:40px;
+    margin:20px;
+    padding:10px;
   }
-  .copy-container li{
-    font-size: 25px;
+  .contents li{
+    font-size: 18px;
   }
-  .btn {
-    border-radius: 5px;
-    background-color: rgb(56, 55, 66);
-    padding: 13px;
-    text-decoration: none;
+a.btn-radius-solid {
+  border: 1px solid #ccc;
+  background: #f1e767;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fdfbfb), to(#ebedee));
+  background: -webkit-linear-gradient(top, #fdfbfb 0%, #ebedee 100%);
+  background: linear-gradient(to bottom, #fdfbfb 0%, #ebedee 100%);
+  -webkit-box-shadow: inset 1px 1px 1px #fff;
+  box-shadow: inset 1px 1px 1px #fff;
+  font-size:20px;
+  margin-right: 20px;
+}
+a.btn-radius-solid:hover {
+  background: -webkit-gradient(linear, left bottom, left top, from(#cfcdcd), to(#565657));
+  background: -webkit-linear-gradient(bottom, #7e7e7e 0%, #646464 100%);
+  background: linear-gradient(to top, #fdfbfb 0%, #666666 100%);
+}
   }
-  }
-  @media screen and (max-width:767px) { 
-    a:link {color:#fff; transition:2s;}
-    a:visited{color:#fff;}
-    a:hover{color:#30e4f1;}
-    body{
-      font-family:"Avenir Next";
-      background-image:url("typewriter.jpg")
+@media screen and (max-width:767px) { 
+  header a:link {color:#fff; transition:2s;}
+  header a:visited{color:#fff;}
+  header a:hover { color:#30e4f1;}
+body{
+    font-family: "Avenir Next";
+    background-image:url("typewriter.jpg")
     }
-    li{
-      list-style:none;
-    }
-   .main{
-     padding-top:120px;
-   }
-    header{
-      background-color:rgba(233,198,145,0.623);
-      height:110px;
-      margin:4px;
-    }
-    .header-logo{
-      float:left;
-      font-size:30px;
-      padding:15px 20px 17px 20px;
-    }
-    .header-list li{
-      font-size:16px;
-      padding:3px;
-    }
-    h1{
-      color:#fff;
-      padding-top:90px;
-      padding-left:20px;
-      font-size:60px;
+      header{
+        background-color:rgba(233,198,145,0.623);
+        height:110px;
+        margin:4px;
       }
-      .copy-container li{
-        font-size: 20px;
+      .header-logo{
+        float:left;
+        padding:15px 0px 17px 3px;
       }
-    .btn {
-      border-radius:5px;
-      background-color: rgb(56, 55, 66);
-      padding:13px;
-      text-decoration:none;
-    }
+      .header-list li{  
+      list-style: none;
+       font-size:17px;
+       padding-top:4px;
+      }
+.main{
+  margin-top:350px;}
+  h1{
+    color:rgb(255, 255, 255);
+  }
+  .contents{
+    margin:20px;
+    padding: 5px;
+    float:left;
+  }
+  p{
+    color:rgb(0, 0, 0);
+    font-size: 14px;
+  }
+a.btn-radius-solid {
+  border: 1px solid #ccc;
+  background: #f1e767;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fdfbfb), to(#ebedee));
+  background: -webkit-linear-gradient(top, #fdfbfb 0%, #ebedee 100%);
+  background: linear-gradient(to bottom, #fdfbfb 0%, #ebedee 100%);
+  -webkit-box-shadow: inset 1px 1px 1px #fff;
+  box-shadow: inset 1px 1px 1px #fff;
+  font-size:20px;
+  margin-right: 20px;
+  float:left;
+}
+a.btn-radius-solid:hover {
+  background: -webkit-gradient(linear, left bottom, left top, from(#cfcdcd), to(#565657));
+  background: -webkit-linear-gradient(bottom, #7e7e7e 0%, #646464 100%);
+  background: linear-gradient(to top, #fdfbfb 0%, #666666 100%);
+}
+.contents-item li{
+  color:#fff;
+}
   }
